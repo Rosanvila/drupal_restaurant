@@ -1,0 +1,7 @@
+name: 'Hello World'
+type: module
+description: 'Un module simple pour afficher un message Hello World.'
+core_version_requirement: ^11 || ^10 || ^9
+package: Custom
+dependencies:
+  - drupal:system
