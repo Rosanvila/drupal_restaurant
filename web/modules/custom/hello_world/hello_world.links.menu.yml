@@ -1,0 +1,6 @@
+hello_world.settings:
+  title: 'Hello World Settings'
+  description: 'Configure the welcome message for Hello World.'
+  route_name: hello_world.settings
+  parent: system.admin_config_development
+  weight: 0

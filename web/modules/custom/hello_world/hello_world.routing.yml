@@ -1,0 +1,14 @@
+hello_world.content:
+  path: '/hello-world'
+  defaults:
+    _controller: '\Drupal\hello_world\Controller\HelloWorldController::index'
+    _title: 'Hello World'
+  requirements:
+    _permission: 'access content'
+hello_world.settings:
+  path: '/admin/config/development/hello-world'
+  defaults:
+    _form: '\Drupal\hello_world\Form\HelloWorldSettingsForm'
+    _title: 'Hello World Settings'
+  requirements:
+    _permission: 'administer site configuration'
