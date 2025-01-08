@@ -36,6 +36,13 @@ class HelloWorldSettingsForm extends ConfigFormBase {
     return parent::buildForm($form, $form_state);
   }
 
+  public function validateForm(array &$form, FormStateInterface $form_state) {
+    $welcome_message = $form_state->getValue('welcome_message');
+    if (strlen($welcome_message) < 10) {
+      $form_state->setErrorByName('welcome_message', $this->t('The welcome message is too short. It must be at least 10 characters long.'));
+    }
+  }
+
   /**
    * Submit the form.
    */
